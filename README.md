@@ -1,6 +1,6 @@
-# API Project: URL Shortener Microservice for freeCodeCamp
-
+# API Project: URL Shortener Microservice
 <hr>
+
 ### User Stories
 
 1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
@@ -12,7 +12,7 @@
 
 #### Creation Example:
 
-POST [base_url]/api/shorturl/new - body (urlencoded) :  url=https://www.google.com
+POST [base_url]/api/shorturl/new/https://www.google.com
 
 #### Usage:
 
@@ -20,4 +20,4 @@ POST [base_url]/api/shorturl/new - body (urlencoded) :  url=https://www.google.c
 
 #### Will redirect to:
 
-http://forum.freecodecamp.com
+https://www.google.com
