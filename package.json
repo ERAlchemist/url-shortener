@@ -9,11 +9,14 @@
 	"dependencies": {
 		"assert": "^1.4.1",
 		"body-parser": "^1.18.3",
+		
 		"dotenv": "^6.2.0",
 		"express": "^5.0.0-alpha.2",
 		"heroku": "^7.22.7",
+	
 		"mongodb": "^3.1.13",
 		"shortid": "^2.2.14",
+	
 		"valid-url": "^1.0.9"
 	},
 	"engines": {
@@ -25,7 +28,7 @@
 	},
 	"keywords": [
 		"node",
-		"hyperdev",
+		"mongoDB",
 		"express"
 	],
 	"author": "Eric Albertus",

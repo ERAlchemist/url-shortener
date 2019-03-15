@@ -6,51 +6,69 @@
       <title>URL Shortener</title>
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="/public/style.css" rel="stylesheet" type="text/css">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       
    </head>
 
    <body >
+      <nav class="navbar sticky-top navbar-light" style="background-color: #fcfcfc;">
+        <h1 class="display-4">API Project: URL Shortener Microservice</h1>
+       
+     </nav>
+     <hr>
+      <div class="container-fluid">
      
-    <h1>API Project: URL Shortener Microservice</h1>
-      <hr>
-      <div class="container" style="background-color: #EEEEEE">
-          <div id="div1"></div>
-        <div class="box" style="box-sizing: border-box; padding-bottom: 5%;  padding-left: 5%; padding-right: 5%">
-          <h2>User Story: </h2>
-          <ul>
-            <li>I can POST a URL to <code>https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":7C_sxAi5h}</code></li>
+        <div class="container">
+          <h3>User Story: </h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">I can POST a URL to <code>https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br><br>Example : <code>{"original_url":"www.google.com","short_url":zMCccMc2p}</code></li>
             <br>
-            <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
+            <li class="list-group-item">If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
       
             <br>
-            <li>When I visit the shortened URL, it will redirect me to my original link.</li>
+            <li class="list-group-item">When I visit the shortened URL, it will redirect me to my original link.</li>
           </ul>
-          
+          <hr>
           <h3>Short URL Creation </h3>
           <p>
             example: <code>POST https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new</code>/<code>https://www.freecodecamp.com</code>
           </p>
-          <form action="/api/shorturl/new" method="POST">
-            <label for="url_input">URL to be shortened</label>
-            <input id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
-            <input type="submit" value="POST URL">
-          </form>
-          <h3>Example Usage:</h3>
-          <a href="http://aqueous-scrubland-34513.herokuapp.com/zMCccMc2p">
-            https://aqueous-scrubland-34513.herokuapp.com/7C_sxAi5h
-          </a>
-
-          <h3>Will Redirect to:</h3>
-          <p>https://freecodecamp.com</p>
-        </div>
+          <hr>
+          <div class="form-group">
+              <form class="form-inline" action="/api/shorturl/new" method="POST">
+                <div class="input-group mb-3 mr-sm-2">
+                    <label  for="url_input">URL to be shortened: </label>
+                    <input id="url_input" class="form-control mx-sm-3" type="text" name="url" value="https://www.freecodecamp.com">
+                    <button class="btn btn-primary" type="submit">POST URL</button>
+                </div>
+                
+              </form>
+          </div>
+          <hr>
+          <div class="containter">
+            <h3 >Example Usage:</h3>
+              <a  href="http://aqueous-scrubland-34513.herokuapp.com/zMCccMc2p">
+                  https://aqueous-scrubland-34513.herokuapp.com/zMCccMc2p
+              </a>
+              <hr>
+              <h3>Will Redirect to:</h3>
+              <p>https://freecodecamp.com</p>
+           </div>
+          </div>
+          
       </div>
-      <hr>
-      <div class="footer">
-        <p>
-          by <a href="http://www.freecodecamp.com">freeCodeCamp</a>
-        </p>
-      </div>
+      
+      <nav class="navbar sticky-bottom navbar-light"  style="background-color: #fcfcfc;">
+          <p>
+              by <a class="text-center" href="http://www.freecodecamp.com">freeCodeCamp</a>
+            </p>
+      </nav>
+        
+     
    </body>
 
 
