@@ -12,11 +12,11 @@
 
 #### Creation Example:
 
-POST [base_url]/api/shorturl/new/https://www.google.com
+POST https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new/https://www.google.com
 
 #### Usage:
 
-[base_url]/7C_sxAi5h
+https://aqueous-scrubland-34513.herokuapp.com/7C_sxAi5h
 
 #### Will redirect to:
 

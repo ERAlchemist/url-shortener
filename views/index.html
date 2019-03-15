@@ -19,7 +19,7 @@
         <div class="box" style="box-sizing: border-box; padding-bottom: 5%;  padding-left: 5%; padding-right: 5%">
           <h2>User Story: </h2>
           <ul>
-            <li>I can POST a URL to <code>[base_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":7C_sxAi5h}</code></li>
+            <li>I can POST a URL to <code>https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":7C_sxAi5h}</code></li>
             <br>
             <li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
       
@@ -29,7 +29,7 @@
           
           <h3>Short URL Creation </h3>
           <p>
-            example: <code>POST [base_url]/api/shorturl/new</code> - <code>https://www.freecodecamp.com</code>
+            example: <code>POST https://aqueous-scrubland-34513.herokuapp.com/api/shorturl/new</code>/<code>https://www.freecodecamp.com</code>
           </p>
           <form action="/api/shorturl/new" method="POST">
             <label for="url_input">URL to be shortened</label>
@@ -37,14 +37,15 @@
             <input type="submit" value="POST URL">
           </form>
           <h3>Example Usage:</h3>
-          <a href="https://thread-paper.hyperdev.space/api/shorturl/3">
-            [base_url]/7C_sxAi5h
+          <a href="http://aqueous-scrubland-34513.herokuapp.com/zMCccMc2p">
+            https://aqueous-scrubland-34513.herokuapp.com/7C_sxAi5h
           </a>
 
           <h3>Will Redirect to:</h3>
           <p>https://freecodecamp.com</p>
         </div>
       </div>
+      <hr>
       <div class="footer">
         <p>
           by <a href="http://www.freecodecamp.com">freeCodeCamp</a>
