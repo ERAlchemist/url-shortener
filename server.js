@@ -26,8 +26,8 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.use('/api/', express.static('public'));
 app.get('/api/shorturl/new/:url(*)', function(req, res){
   var url = req.params.url;
-  if(validUrl.isHttpUri(url)){
-
+  if(validUrl.isHttpUri(url) || validUrl.isHttpsUri(url)){
+    
     MongoClient.connect(uri, {useNewUrlParser: true}, (err, db) => {
       if(err){
         res.end(`error test : user is ${mongUser}`);
@@ -50,6 +50,7 @@ app.get('/api/shorturl/new/:url(*)', function(req, res){
       }
     });
   } else {
+    
     var data = {
       error: "invalid URL"
     }
